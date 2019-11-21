@@ -1,0 +1,19 @@
+{
+  "name": "transaction-checker",
+  "version": "1.0.0",
+  "description": "Node.js program for monitoring transactions to a certain Ethereum address",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ethereum",
+    "node.js",
+    "web3.js"
+  ],
+  "author": "Jonas Bostoen",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^1.2.4"
+  }
+}
