@@ -4,7 +4,7 @@ module.exports = web3 => {
     const account = 'YOUR_ETH_ADDRESS'.toLowerCase();
 
     return {
-        checkLastBlock: async () => {
+        async checkLastBlock() => {
             let block = await web3.eth.getBlock('latest');
             console.log(`[*] Searching block ${ block.number }...`);
             if (block && block.transactions) {
@@ -18,7 +18,7 @@ module.exports = web3 => {
             }
         },
 
-        checkBlocks: async (start, end) => {
+        async checkBlocks(start, end) => {
             for (let i = start; i < end; i++) {
                 let block = await web3.eth.getBlock(i)
                 console.log(`[*] Searching block ${ i }`);
